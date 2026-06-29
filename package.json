@@ -1,0 +1,51 @@
+{
+  "name": "squish-image",
+  "version": "1.0.0",
+  "description": "Zero-dependency client-side image compression. Resize, convert formats, and compress images in the browser before uploading.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "image",
+    "compression",
+    "resize",
+    "webp",
+    "canvas",
+    "browser",
+    "client-side",
+    "optimize",
+    "upload",
+    "blob",
+    "image-compression",
+    "image-resize",
+    "file-upload",
+    "lightweight"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devansh-ar/squish-image.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devansh-ar/squish-image/issues"
+  },
+  "homepage": "https://github.com/devansh-ar/squish-image#readme",
+  "devDependencies": {
+    "rollup": "^4.18.0"
+  }
+}
